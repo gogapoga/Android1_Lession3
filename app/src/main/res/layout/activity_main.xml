@@ -37,10 +37,10 @@
         android:fillViewport="true">
         <LinearLayout
             android:id="@+id/cities"
+            android:background="@drawable/sky"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
         </LinearLayout>
-    </ScrollView>
+      </ScrollView>
 </android.support.constraint.ConstraintLayout>
