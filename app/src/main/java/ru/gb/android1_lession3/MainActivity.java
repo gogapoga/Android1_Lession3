@@ -1,10 +1,14 @@
 package ru.gb.android1_lession3;
 
 import android.content.Intent;
+import android.graphics.Typeface;
+import android.graphics.drawable.Drawable;
 import android.provider.ContactsContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.LinearLayout;
@@ -27,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         arrayCity = getArrayCity();
         for(int i = 0; i < arrayCity.length; i++) {
             Button button = new Button(this);
+            button.setTypeface(null, Typeface.BOLD);
+            button.setTextColor(getResources().getColor(R.color.colorButton));
             button.setText(arrayCity[i].getName());
             button.setTag(i);
             cities.addView(button);
