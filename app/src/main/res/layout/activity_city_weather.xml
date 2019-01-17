@@ -6,16 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".CityWeatherActivity">
     <ScrollView
-        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true">
         <LinearLayout
             android:id="@+id/timeweather"
             android:orientation="vertical"
+            android:background="@drawable/sky"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-
         </LinearLayout>
     </ScrollView>
 </android.support.constraint.ConstraintLayout>
